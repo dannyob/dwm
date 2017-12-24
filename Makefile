@@ -30,6 +30,7 @@ dwm: ${OBJ}
 
 clean:
 	@echo cleaning
+	@rm -f config.h
 	@rm -f dwm ${OBJ} dwm-${VERSION}.tar.gz
 
 dist: clean
