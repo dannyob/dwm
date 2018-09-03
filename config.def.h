@@ -35,7 +35,7 @@ static const Rule rules[] = {
 	{ NULL,               "Navigator",  NULL,       1,            0,           -1 },
     { "Hexchat",          NULL,         NULL,       1 << 3,       0,           -1 },
     { "Mattermost",       NULL,         NULL,       1 << 3,       0,           -1 },
-    { "VidyoDesktop",     NULL,         NULL,       1 << 4,       0,           -1 }
+    { "Alacritty",        NULL,         NULL,       1 << 2,       0,           -1 }
 };
 
 /* layout(s) */
