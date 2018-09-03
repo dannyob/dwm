@@ -72,6 +72,7 @@ static const char *termcmd[]  = { "alacritty", NULL };
 static const char *cmdswitchtobrowser[] = { "wmctrl", "-x", "-a", "navigator", NULL };
 static const char *cmdswitchtoterminal[] = { "wmctrl", "-x", "-a", "alacritty", NULL };
 static const char *cmdswitchtochat[] = { "wmctrl", "-x", "-a", "hexchat", NULL };
+static const char *cmdswitchtoleo[] = { "wmctrl", "-x", "-a", "leo", NULL };
 
 static const char *cmdbrightnessup[]   = { "backlight", "-inc", "100", NULL };
 static const char *cmdbrightnessdown[] = { "backlight", "-dec", "100", NULL };
@@ -85,6 +86,7 @@ static Key keys[] = {
 	{ MODKEY,                  XK_a,                  spawn,          {.v = cmdswitchtobrowser } },
 	{ MODKEY,                  XK_d,                  spawn,          {.v = cmdswitchtoterminal } },
 	{ MODKEY,                  XK_f,                  spawn,          {.v = cmdswitchtochat } },
+	{ MODKEY,                  XK_s,                  spawn,          {.v = cmdswitchtoleo } },
 	{ 0,                       XF86MonBrightnessUp,   spawn,          {.v = cmdbrightnessup } },
 	{ 0,                       XF86MonBrightnessDown, spawn,          {.v = cmdbrightnessdown } },
 	{ MODKEY,                  XK_F12,                spawn,          {.v = cmdslock } },
