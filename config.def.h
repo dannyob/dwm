@@ -35,7 +35,8 @@ static const Rule rules[] = {
 	{ NULL,               "Navigator",  NULL,       1,            0,           -1 },
     { "Hexchat",          NULL,         NULL,       1 << 3,       0,           -1 },
     { "Mattermost",       NULL,         NULL,       1 << 3,       0,           -1 },
-    { "Alacritty",        NULL,         NULL,       1 << 2,       0,           -1 }
+    { "Alacritty",        NULL,         NULL,       1 << 2,       0,           -1 },
+    { "Kitty",            NULL,         NULL,       1 << 2,       0,           -1 }
 };
 
 /* layout(s) */
@@ -67,10 +68,10 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 /* static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL }; */
 static const char *dmenucmd[] = { "rofi", "-combi-modi","window,run,drun","-show", "combi", "-modi combi", NULL };
-static const char *termcmd[]  = { "alacritty", NULL };
+static const char *termcmd[]  = { "kitty", NULL };
 
-static const char *cmdswitchtobrowser[] = { "wmctrl", "-x", "-a", "navigator", NULL };
-static const char *cmdswitchtoterminal[] = { "wmctrl", "-x", "-a", "alacritty", NULL };
+static const char *cmdswitchtobrowser[] = { "/home/danny/.local/bin/o", NULL };
+static const char *cmdswitchtoterminal[] = { "wmctrl", "-x", "-a", "kitty", NULL };
 static const char *cmdswitchtochat[] = { "wmctrl", "-x", "-a", "hexchat", NULL };
 static const char *cmdswitchtoleo[] = { "wmctrl", "-x", "-a", "leo", NULL };
 
